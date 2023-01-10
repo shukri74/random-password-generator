@@ -90,7 +90,21 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  var passwordLength = parseInt(prompt("How many characters do you want the password?"));
 
+  /*Validations for the length of the password and avoid empty input*/
+
+  if(passwordLength <  10 && passwordLength > 64){
+    alert("The pasword must be between 10 and 64 characters");
+  }
+
+  if(isNaN(passwordLength)){
+    alert("The pasword must be between 10 and 64 characters")
+
+
+
+
+  }
 }
 
 // Function for getting a random element from an array
