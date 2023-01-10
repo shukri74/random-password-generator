@@ -100,11 +100,22 @@ function getPasswordOptions() {
 
   if(isNaN(passwordLength)){
     alert("The pasword must be between 10 and 64 characters")
-
-
-
-
   }
+
+
+  /* prompts to confirm what types of characters are to be included in the password and more validations*/
+
+  var lowercaseCharacters = window.confirm("Do you want to include Lowercase characters")
+  var uppercaseCharacters = window.confirm("Do you want to include Uppercase characters")
+  var numbers = window.confirm("Do you want to include numbers")
+  var specialcharacters = window.confirm("Do you want to include special characters")
+ 
+  if(!includelowercaseCharacters && !includeuppercaseCharacters && !includenumbers && !specialcharacters){
+    alert("You must choose at least one type of character")
+  }
+
+
+
 }
 
 // Function for getting a random element from an array
