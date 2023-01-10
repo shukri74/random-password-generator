@@ -112,19 +112,33 @@ function getPasswordOptions() {
  
   if(!includelowercaseCharacters && !includeuppercaseCharacters && !includenumbers && !specialcharacters){
     alert("You must choose at least one type of character")
+    return;
+  }
+ 
+  /*stores prompts responses in an object*/
+
+  var passwordObject = {
+    Length: passwordLength,
+    lower: lowercaseCharacters,
+    upper: uppercaseCharacters,
+    numbers: numbers,
+    special: specialcharacters,
+
   }
 
-
-
+  return passwordObject;
 }
 
 // Function for getting a random element from an array
 function getRandom(arr) {
+  var randomIndex =  Math.floor(Math.random() * arr.length);
+  return arr[randomIndex]
 
 }
 
 // Function to generate password with user input
 function generatePassword() {
+  
 
 }
 
