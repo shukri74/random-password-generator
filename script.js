@@ -110,7 +110,7 @@ function getPasswordOptions() {
   var numbers = window.confirm("Do you want to include numbers")
   var specialcharacters = window.confirm("Do you want to include special characters")
  
-  if(!includelowercaseCharacters && !includeuppercaseCharacters && !includenumbers && !specialcharacters){
+  if(!lowercaseCharacters && !uppercaseCharacters && !numbers && !specialcharacters){
     alert("You must choose at least one type of character")
     return;
   }
