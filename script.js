@@ -167,7 +167,15 @@ function generatePassword() {
     includedCharacters.concat(specialCharacters)
   }
 
+ for(var i = 0; i < passwordChoices.length; i++){
 
+  var nextCharacter = getRandom(includedCharacters)
+
+  generatedPassword.push(nextCharacter);
+
+}
+  generatedPassword.join("")
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
