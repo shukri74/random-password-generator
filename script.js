@@ -167,14 +167,18 @@ function generatePassword() {
     includedCharacters.concat(specialCharacters)
   }
 
+  // loops through the array of chosen characters and randomly chose characters until the password length is reached
+
  for(var i = 0; i < passwordChoices.length; i++){
 
   var nextCharacter = getRandom(includedCharacters)
 
   generatedPassword.push(nextCharacter);
+ 
+  generatedPassword.join("")
 
 }
-  generatedPassword.join("")
+  return generatedPassword;
 }
 
 // Get references to the #generate element
