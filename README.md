@@ -4,6 +4,10 @@
 
 The task was to write a random password generator in javascript which will use different types of characters (Uppercase, Lowercase, Special characters etc.) to generate a password of the user's chosen length. Browser prommpts are used to record the user's choices for the password such as, whether to include certain types of characters.
 
+deployed site: https://shukri74.github.io/random-password-generator/
+
+
+
 ![Screenshot](random%20password%20snip%20project.PNG)
 
 ## Installation
